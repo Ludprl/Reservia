@@ -1,0 +1,92 @@
+/* Police */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+/* Racine */
+body{
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Raleway', sans-serif;
+    
+}
+.flex{
+    display: flex;
+}
+
+.centred {
+    margin: 0 auto;    
+    max-width: 1340px;
+}
+
+/* Header */
+
+header{
+    justify-content: space-between;
+    margin-bottom: 35px;
+    padding-top: 50px;
+}
+
+.menu li{
+    list-style: none;
+}
+
+.logo{
+    flex: 1;
+}
+.en-cours{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+    font-weight: 550;
+}
+nav ul {
+    margin : 0;
+}
+
+nav a{
+    padding: 48px 30px 0;
+    text-decoration: none;
+
+}
+
+.inscrire{
+    text-decoration: none;
+    color: #0065FC;
+    font-weight: 650;
+}
+
+nav li a:hover{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+/* Contenu */ 
+
+.hosting{
+
+}
+
+/* Footer */
+
+.footercontainer{
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.footerul {
+    list-style: none;
+    padding : 0;
+}
+.footerul li:first-child{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+.footerul a{
+    text-decoration: none;
+}
+.footercontainer{
+    background-color: #f2f2f2;
+}
