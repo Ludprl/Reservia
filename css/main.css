@@ -21,6 +21,9 @@ body{
 a {
     text-decoration: none;
 }
+a:visited {
+    text-decoration: none;
+  }
 /* Header */
 
 header{
@@ -37,7 +40,7 @@ header{
 }
 .en-cours{
     color: #0065FC;
-    border-top: 2px solid #0065FC;
+    border-top: 3px solid #0065FC;
     font-weight: 550;
 }
 nav ul {
@@ -45,6 +48,7 @@ nav ul {
 }
 
 nav a{
+    color: black;
     padding: 48px 30px 0;
     text-decoration: none;
 
@@ -54,10 +58,11 @@ nav a{
     text-decoration: none;
     color: #0065FC;
     font-weight: 650;
+    margin-left: 20px;
 }
 
 nav li a:hover{
-    color: #0065FC;
+    color: #0065FC ;
     border-top: 2px solid #0065FC;
 }
 /* Contenu */ 
@@ -79,7 +84,7 @@ nav li a:hover{
     justify-content: space-around;
     align-content: space-between;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 0 40px 0 40px;
 }
     .hostingitem{
@@ -87,14 +92,17 @@ nav li a:hover{
         width: calc(33% - 2rem);
         min-width: 200px;
         max-width: calc(33% - 2rem);
-        padding: 10px;
+        padding: 5px;
         background-color: white;
-        border-radius: 10px;
+        border-radius: 20px;
         box-shadow: 4px 4px 15px lightgray;
+    }
+    .hostingitem a{
+        color: #0065FC;
     }
     .hostingitem img{
         width: 100%;
-        border-radius: 10px 10px 0 0;
+        border-radius: 20px 20px 0 0;
         height: 126px;
         object-fit: cover;
 }
@@ -104,15 +112,17 @@ nav li a:hover{
     justify-content: space-around;
     background-color: #fff;
     padding: 5px 10px;
+    border-radius: 20px;
 }
 .hotelDetails p{
+    color: black;
     font-size: small;
     margin: 5px 0;
 }
 .hostingName{
+    color: black;
     margin: 0;
     font-weight: 700;
-    font-size: 1.1rem;
 }
 .hostingRate{
     word-spacing: -1ch;
