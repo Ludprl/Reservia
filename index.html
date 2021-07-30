@@ -23,18 +23,75 @@
             <li><a href="#">Activités</a></li>
         </ul>
     </nav>
-    <a href="" class="inscrire">S'inscrire</a>
+    <div class="Register"><a href="" class="inscrire">S'inscrire</a></div>
   </header>
-    <!-- Contenu -->
-<section class="hosting centred">
-  <div class="mainhosting">
+    <!-- Recherche -->
+    <div class="search centred">
+      <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+      <p>En plein centre ville ou en pleine nature</p>
+      <form class="searchForm flex" action="#" method="GET">
+          <div class="containerICN flex">
+              <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <input type="search" class="searchFieldInput" placeholder="Marseille, France">
+          <button class="searchButton">
+              <span>Rechercher</span>
+              <i class="fas fa-search"></i>
+          </button>
+      </form>
+
+      <!-- Filtres -->
+      <div class="Containerfilter flex centred">
+          <div class="FilterText">Filtres</div>
+          <div class="filterList flex">
+
+              <div class="filter flex">
+                  <div class="iconFilter flex">
+                      <i class="fas fa-money-bill-wave"></i>
+                  </div>
+                  <span>Économique</span>
+              </div>
+              
+              <div class="filter flex">
+                  <div class="iconFilter flex">
+                      <i class="fas fa-child"></i>
+                  </div>
+                  <span>Familial</span>
+              </div>
+              
+              <div class="filter flex">
+                  <div class="iconFilter flex">
+                      <i class="fas fa-heart"></i>
+                  </div>
+                  <span>Romantique</span>
+              </div>
+
+              <div class="filter flex">
+                  <div class="iconFilter flex">
+                      <i class="fas fa-dog"></i>
+                  </div>
+                  <span>Animaux autorisés</span>
+              </div>
+
+          </div>
+      </div>
+      <div class="InfoFiltre flex">
+          <div class="iconInfo flex">
+              <i class="fas fa-info"></i>
+          </div>
+          Plus de 500 logements sont disponibles dans cette ville
+      </div>
+  </div>
+<!-- Contenu -->
+<section class="hosting centred flex">
+  <div class="mainhosting flex">
     <div class="sectiontitle"><h3>Hébergements à Marseille</h3></div>
     <div class="hostingitem">
       <a href="#">
         <article class="hotelFrame">
-            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
-                 alt="Photo d'une chambre avec un lit superposé et vu sur la ville">
             <div class="hotelDetails">
+              <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                 alt="Photo d'une chambre avec un lit superposé et vu sur la ville">
                 <h4 class="hostingName">Auberge la Cannebière</h4>
                 <p>Nuit à partir de <span class="prix">25€</span></p>
                 <div class="hostingRate">
@@ -46,46 +103,101 @@
               </div>
           </article>
       </a>  
+     </div>
+    <div class="hostingitem">
+      <a href="#">
+        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+      </a>
+    </div>
+    <div class="hostingitem">
+      <a href="#">
+        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+      </a>
+    </div>
+    <div class="hostingitem">
+      <a href="#">
+        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+      </a>
+    </div>
+    <div class="hostingitem">
+      <a href="#">
+        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+      </a>
+    </div>
+    <div class="hostingitem">
+      <a href="#">
+        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+      </a>
+    </div>
+
   </div>
-    <div class="hostingitem">
+  <div class="popHosting">
+    <div class="popTitle"><h3>Les plus populaires</h3></div>
+    <div class="popHotel">
       <a href="#">
-        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-      </a>
-    </div>
-    <div class="hostingitem">
+        <article class="popHotelFrame flex">
+            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                 alt="Photo d'une chambre avec un lit superposé et vu sur la ville">
+            <div class="popHotelDetails">
+                <h4 class="hostingName">Auberge la Cannebière</h4>
+                <p>Nuit à partir de <span class="prix">25€</span></p>
+                <div class="hostingRate">
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star GStar"></i>
+                </div>
+              </div>
+          </article>
+      </a>  
+     </div>
+     <div class="popHotel">
       <a href="#">
-        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-      </a>
-    </div>
-    <div class="hostingitem">
+        <article class="popHotelFrame flex">
+            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                 alt="Photo d'une chambre avec un lit superposé et vu sur la ville">
+            <div class="popHotelDetails">
+                <h4 class="hostingName">Auberge la Cannebière</h4>
+                <p>Nuit à partir de <span class="prix">25€</span></p>
+                <div class="hostingRate">
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star GStar"></i>
+                </div>
+              </div>
+          </article>
+      </a>  
+     </div>
+     <div class="popHotel">
       <a href="#">
-        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-      </a>
-    </div>
-    <div class="hostingitem">
-      <a href="#">
-        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-      </a>
-    </div>
-    <div class="hostingitem">
-      <a href="#">
-        <img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-      </a>
-    </div>
-    
+        <article class="popHotelFrame flex">
+            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+                 alt="Photo d'une chambre avec un lit superposé et vu sur la ville">
+            <div class="popHotelDetails">
+                <h4 class="hostingName">Auberge la Cannebière</h4>
+                <p>Nuit à partir de <span class="prix">25€</span></p>
+                <div class="hostingRate">
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star BStar"></i>
+                    <i class="fas fa-star GStar"></i>
+                </div>
+              </div>
+          </article>
+      </a>  
+     </div>
   </div>
-  <div class="popularhosting">
-    <div class="sectiontitle"><h2>Les plus populaires</h2></div>
-  </div>
+
 </section>
 
-<aside class="MarseilleOut centred">
-  <h2>Activités à Marseille</h2>
+<section class="MarseilleOut centred">
+  <h3>Activités à Marseille</h3>
 
-</aside>
+</section>
       <!-- Pied de page -->
   <footer>
-  <div class="footercontainer">
+  <div class="footercontainer centred flex">
         <div class="colfooter">
           <ul class="footerul">
             <li>A Propos</li>

@@ -23,12 +23,13 @@ a {
 }
 a:visited {
     text-decoration: none;
-  }
+}
+
 /* Header */
 
 header{
-    margin-bottom: 35px;
     padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .menu li{
@@ -65,24 +66,137 @@ nav li a:hover{
     color: #0065FC ;
     border-top: 2px solid #0065FC;
 }
-/* Contenu */ 
+/* Recherche */ 
+
+.search h2,p{
+    margin:0 0 10px 0;
+}
+.containerICN{
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    width: 50px;
+}
+.containerICN i{
+    margin: auto;
+    font-size: 1.2rem;
+}
+.searchForm{
+    height: 50px;
+    margin:20px 0 40px 5px;
+}
 .sectiontitle{
     width: 100%;
 }
+.searchFieldInput{
+    border: 1px solid #f2f2f2;
+    padding: 0 0 0 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 230px;
+}
+
+.searchFieldInput::placeholder{
+    color: #c2c2c2;
+}
+
+.searchButton{
+    width: 130px;
+    background-color: #0065FC;
+    border: none;
+    padding: 0;
+    border-radius: 0 15px 15px 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.searchButton i{
+    display: none;
+}
+/* Filtres */
+
+.FilterText{
+    align-self: center;
+}
+
+.Containerfilter{
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.filter{
+    align-items: center;
+    height: 46px;
+    border: 2px solid #f2f2f2;
+    border-left: none;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius: 25px;
+}
+
+.filter span{
+    padding-left: 12px;
+}
+
+.filter:hover{
+    cursor: pointer;
+    border-color: #0065FC;
+    color: white;
+    background-color: #0065FC;
+}
+
+.filterList{
+    flex-wrap: wrap;
+}
+
+.iconFilter{
+    position: relative;
+    right: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #DEEBFF;
+}
+
+.iconFilter i{
+    margin: auto;
+    color: #0065FC;
+}
+
+.iconInfo{
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f2f2f2;
+    border-radius: 1rem;
+    margin-right: 10px;
+}
+
+.iconInfo i{
+    margin: auto;
+    font-size: .9rem;
+    color: #0065FC;  
+}
+
+.InfoFiltre{
+    align-items: center;
+    margin-bottom: 45px;
+}
+/* contenu */ 
 
 .hosting{
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 }
 .mainhosting{
-    display: flex;
-    width: 68%;
+    width: 65%;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content: space-between;
+    align-content: flex-start;
     background-color: #f2f2f2;
     border-radius: 20px;
     padding: 0 40px 0 40px;
@@ -107,26 +221,23 @@ nav li a:hover{
         object-fit: cover;
 }
 .hotelDetails{
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
     background-color: #fff;
-    padding: 5px 10px;
     border-radius: 20px;
 }
 .hotelDetails p{
     color: black;
     font-size: small;
-    margin: 5px 0;
+    margin: 5px 0 0 15px;
 }
 .hostingName{
     color: black;
-    margin: 0;
+    margin: 8px 0 0 15px;
     font-weight: 700;
 }
 .hostingRate{
     word-spacing: -1ch;
-    font-size: small;
+    font-size: 9pt;
+    margin: 10px 0 7px 15px;
 }
 .prix{
     font-weight: 600;
@@ -138,38 +249,296 @@ nav li a:hover{
     color: #f2f2f2;
 }
 
-.popularhosting{
-    display: flex;
+.popHosting{
+    flex-wrap: wrap;
     background-color: #f2f2f2;
-    border-radius: 10px;
-    padding: 0 40px 0 40px;
-    width: 18%;
+    border-radius: 20px;
+    padding: 0 35px 0 35px;
+    width: 22%;
+}
+.popHotel{
+
+}
+.popHotelFrame{
+    height: 144px;
+    display: flex;
+    margin-bottom: 30px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 15px lightgray;
+}
+.popHotelFrame img{
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    max-width: 125px;
 }
 
+.popHotelDetails{
+    width: 100%;
+    margin-left: 20px;
+}
+.popHotelDetails p{
+    color: black;
+    font-size: small;
+    margin: 5px 0;
+}
 
 /* Footer */
-
-.footercontainer{
-    display: inline-flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+footer{
+    background-color: #f2f2f2;
 }
-
+.footercontainer{
+    justify-content: flex-start;
+    padding-top: 50px;
+}
+.colfooter{
+    width: 33%;
+}
 
 .footerul {
     list-style: none;
     padding : 0;
+    margin: 0 0 40px 0;
 }
 .footerul li:first-child{
     font-weight: bold;
     color: black;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .footerul a{
+    font-size: 11pt;
+    color: black;
     text-decoration: none;
+    line-height: 2em;
 }
 .footercontainer{
     background-color: #f2f2f2;
+}
+
+/* Media Queries */ 
+
+@media only screen and (max-width: 1280px){
+
+    .hotels{
+        flex: 1.5;
+    }
+    
+    .hotelsTab{
+        grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+        margin: 30px 0;
+    }
+
+    .activityDescription{
+        font-size: 1rem;
+    }
+}
+
+/* Tablet version */
+@media only screen and (max-width: 1024px){
+
+    /* Search - Tablet */
+    .filters{
+        flex-direction: column;
+    }
+
+    .textFilter{
+        align-self: auto;
+        margin-bottom: 15px;
+    }
+
+    .filter{
+        margin: 0 1rem 1rem 0;
+    }
+
+    /* Popular - Tablet */
+
+    .popular{
+        margin: 0 0 20px;
+    }
+
+    .popularFrame{
+        height: 180px;
+    }
+
+    .popularDescription .hotelName{
+        font-size: 1.4rem;
+    }
+
+    .popularDescription p{
+        font-size: 1.2rem;
+    }
+
+    .popularDescription .fa-star{
+        font-size: 1rem;
+    }
+
+    /* Hotels - Tablet */
+    
+    .hotels{
+        order: 2;
+    }
+
+    .containerHotels{
+        flex-direction: column;
+    }
+
+    /* Activities - Tablet */
+    
+    .activitiesTab{
+        height: auto;
+    }
+
+    .activityFrame
+    {
+        height: 190px;
+    }
+
+    .row12, .row5, .row6{
+        grid-row-end: span 4;
+        grid-column-end: span 2;
+    }
+
+    .activityDescription{
+        font-size: 1.1rem;
+    }
+
+
+/* smarphones */
+
+@media only screen and (max-width: 600px){
+
+    /* General */
+
+    #main{
+        margin: 0;
+    }
+
+    h2{
+        font-size: 1.4rem;
+    }
+
+    /* Header - Mobile */
+
+    header{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+
+    .logo {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+
+    .Register{
+        align-self: flex-end;
+        padding: 0;
+        margin-right: 25px;
+        position: relative;
+        bottom: 30px;
+    }
+
+    nav{
+        order:3;
+    }
+    
+    nav ul{
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+
+    nav li {
+        width: 50%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #f2f2f2;
+    }
+    .en-cours {
+        color: #0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top:0px;
+        font-weight: 550;
+    }
+    nav li a{
+        padding: inherit;
+    }
+
+    nav li a:hover{
+        border-top: none;
+    }
+
+    nav li:hover{
+        border-bottom-color:#0065FC;
+    }
+
+    /* Search - Mobile */
+
+    
+
+    /* Popular - Mobile */
+
+    
+
+    /* Hotels - Mobile */
+    .hosting {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+    .popHosting {
+        flex-wrap: wrap;
+        background-color: #f2f2f2;
+        padding: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .popHotel{
+        padding: 0 20px;
+    }
+
+    .mainhosting {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        padding: 0 40px 0 40px;
+    }
+/* Activities - Mobile */
+
+/*Recherche*/
+.search{
+    margin: 30px 20px;
+}
+
+.searchFieldInput{
+    flex: 1;
+}
+
+.searchForm{
+    margin: 35px 0 30px;
+}
+
+.searchButton{
+    position: relative;
+    width: 50px;
+    border-radius: 15px;
+    left: -20px;
+}
+
+.searchButton span{
+    display: none;
+}
+
+.searchButton i{
+    display: inline-block;
+}
+
+.filters{
+    margin-bottom: 12px;
 }
